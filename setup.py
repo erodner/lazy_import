@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
+import codecs
 from setuptools import setup, find_packages
 
-with open('README.rst') as infile:
+with codecs.open('README.rst', 'r', 'utf-8') as infile:
     readme = infile.read()
 
 with open('lazy_import/VERSION') as infile:
